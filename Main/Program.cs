@@ -37,10 +37,15 @@ namespace Main
             var aww = new SoundPlayer(typeof(InterceptKeys).Assembly.GetManifestResourceStream("Main.aww.wav"));
             _soundPlayers[Keys.R] = aww;
 
+            var youSuffer = new SoundPlayer(typeof(InterceptKeys).Assembly.GetManifestResourceStream("Main.You Suffer.wav"));
+            _soundPlayers[Keys.T] = youSuffer;
+
             AddPattern("git", buzz);
             AddPattern("shit", buzz);
             AddPattern("saadon", applause);
             AddPattern("bootstrap", badum);
+            AddPattern("here", youSuffer);
+            AddPattern("automation", youSuffer);
 
             _hookID = SetHook(_proc);
             Application.Run();

@@ -64,5 +64,8 @@
   <ItemGroup>
     <EmbeddedResource Include="aww.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="You Suffer.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
